@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Parcel Sandbox</title>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/index.processed.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo-wrap">
+      <div class="logo">
+        <a href="">
+            <img
+              src="https://res.cloudinary.com/anna-y-topping/image/upload/c_scale,w_832/v1555164089/logo.png"
+              alt=""
+            />
+          </a>
+      </div>
+    </div>
+    <nav>
+      <div class="dropdown">
+        <button class="dropbtn">
+            <a href="">Products</a>
+          </button>
+        <div class="dropdown-content">
+          <a href="#">Digital Signage</a>
+          <a href="#">Guest Wifi</a>
+          <a href="#">Interactive Displays</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">
+            <a href="">Solutions</a>
+          </button>
+        <div class="dropdown-content">
+          <a href="#">Custom Application Development</a>
+          <a href="#">Custom Content</a>
+          <a href="#">Installation and Support</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">
+            <a href="">About Us</a>
+          </button>
+        <div class="dropdown-content">
+          <a href="#">New York Office</a>
+          <a href="#">Sparta Office</a>
+          <a href="#">Blog</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">
+          <a href="" id="contact">Contact</a>
+        </button>
+      </div>
+    </nav>
+    <div class="nav-icon">
+      <div></div>
+    </div>
+  </header>
+  <main>
+    <div class="" id="contact-form">
+      <i class="fas fa-times"></i>
+      <h2>Contact Us</h2>
+      <form method="POST" action="https://formspree.io/atopping@zero-in.com">
+        <input type="text" name="name" placeholder="Name*" required>
+        <input type="email" name="email" placeholder="Email*" required>
+        <input type="text" name="phone" placeholder="Phone*" required>
+        <input type="text" name="company" placeholder="Company">
+        <input type="text" name="industry" placeholder="Industry">
+        <textarea name="message" placeholder="Comments" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+
+    </div>
+    <div class="screen-left">
+      <section class="image">
+        <img class="Select visible" 
+             src=/>
+<!--              "https://unsplash.it/500"  -->
+             
+        <!--              ""  -->
+<!--              "https://res.cloudinary.com/anna-y-topping/image/upload/v1555382593/Flatiron-Building-Secrets-Roof-Basement-Elevator-Sonny-Atis-GFP-NYC_50.jpg"  -->
+        <img class="banking" src="https://res.cloudinary.com/anna-y-topping/image/upload/v1555177981/_RTF0446.jpg" alt="" />
+        <img class="fitness" src="https://res.cloudinary.com/anna-y-topping/image/upload/v1555180675/EquinoxWest2b.jpg" alt="" />
+        <img class="restaurant" src="https://zero-in.com/wp-content/uploads/2016/10/IMG_0269_70_71d.jpg" alt="" />
+        <img class="education" src="https://res.cloudinary.com/anna-y-topping/image/upload/v1555248195/IMG_0062_3_4_1.jpg" alt="" />
+        <img class="grocery" src="https://zero-in.com/wp-content/uploads/2016/08/SR_Produce1_A_100716.jpg" alt="" />
+        <img class="shopping-center" src="https://res.cloudinary.com/anna-y-topping/image/upload/v1555248018/IMG_0609_1.jpg" alt="" />
+        <img class="corporate" src="https://zero-in.com/wp-content/uploads/2016/10/Macys2_100616-3.jpg" alt="" />
+    </div>
+    <div class="screen-right">
+      <div class="info">
+        <h1>Digital Signage for Any Industry</h1>
+        <select id="industry">
+              <option>--Select--</option>
+              <option value="banking">Banking</option>
+              <option value="fitness">Fitness</option>
+              <option value="restaurant">Restaurant</option>
+              <option value="education">Education</option>
+              <option value="grocery">Grocery</option>
+              <option value="shopping-center">Shopping Center</option>
+              <option value="corporate">Corporate Communication</option>
+            </select>
+      </div>
+      <div id="industry-choices"></div>
+      <h2 id="output"></h2>
+      <!-- <section class="industry-choices">
+					<div id='banking' class="industry banking"></div>
+					<div id='fitness' class="industry fitness"></div>
+					<div id='restaurant' class="industry restaurant"></div>
+					<div id='retail' class="industry retail"></div>
+					<div id='shopping-center' class="industry shopping-center"></div>
+					<div id='corporate' class="industry corporate"></div>
+				</section> -->
+      </section>
+      <section id="info-text">
+        <div class="banking">
+          <p id="output">Zero-In specializes in the types of banking digital signage that will get your message to the right people in the right way, regardless of what it is you need to say or how often that message may change. Our design team has significant bank
+            marketing experience and has worked with some of the best minds in bank marketing. From new mobile banking promotions to rate board backgrounds, the Zero-In team has got you covered.</h5>
+            <h5>Solutions:</h5>
+            <ul>
+              <li id="output">Ad Free TV</li>
+              <li id="output">Licensed and Overhead Music</li>
+              <li id="output">Interactive Displays and Tablets</li>
+            </ul>
+        </div>
+        <div class="fitness">
+          <p id="output">Zero-In installs fitness center signage options all throughout gyms, health clubs, spas and similar environments to help you advertise YOUR services in YOUR way, end of story. With our cloud-based fitness center signage options, every aspect
+            of your message can be managed in real time. Whether you’re starting a new promotion or just want to update your customers on something you feel they need to know, you can make it happen in the most timely and accurate way possible.</h5>
+            <h5>Solutions:</h5>
+            <ul>
+              <li id="output">Schedule and Event Integration</li>
+              <li id="output">Interactive Displays</li>
+              <li id="output">Guest Wifi</li>
+            </ul>
+        </div>
+        <div class="restaurant">
+          <p id="output">One of the biggest challenges about getting your message out to the widest possible audience in the foodservice industry is just how frequently that message changes. Help your customers stay informed on things like daily menu items, pricing
+            and nutritional value with our cloud-based Content Management system that allows you to make live changes to your menu boards, wherever and whenever you need.</p>
+          <h5>Solutions:</h5>
+          <ul>
+            <li id="output">Digital Menu Boards</li>
+            <li id="output">Menu Integration</li>
+            <li id="output">Interactive Displays</li>
+          </ul>
+        </div>
+        <div class="education">
+          <p id="output">Every day, both students and faculty are inundated with hundreds of notifications, reminders, alerts, and updates – making the task of getting timely, accurate information into the hands of the people who need it the most something of an uphill
+            battle. Now, thanks to Zero-In’s web-based school digital signage message distribution system, you finally have access to the real time university digital signage solution for communication that you’ve been waiting for.</p>
+          <h5>Solutions:</h5>
+          <ul>
+            <li id="output">Interactive Way-finding</li>
+            <li id="output">Digital Menu Boards</li>
+            <li id="output">Video Walls</li>
+          </ul>
+        </div>
+        <div class="grocery">
+          <p id="output">Zero-In specializes in a wide range of mobile marketing options that will revolutionize the way your customer interacts with your grocery digital signage and other digital signage supermarket options. Use things like QR codes to allow customers
+            to get access to digital coupons immediately, as well as to display weekly specials and more.</p>
+          <h5>Solutions:</h5>
+          <ul>
+            <li id="output">Point of Sale</li>
+            <li id="output">Digital Menu Boards</li>
+            <li id="output">Video Walls</li>
+          </ul>
+        </div>
+        <div class="shopping-center">
+          <p id="output">Today’s centers are now entertainment destinations aimed at attracting visitors for more than just shopping. With large movie theaters, indoor amusement parks and athletic facilities today’s shopping destination needs to be designed with technology
+            in mind. Zero-In has worked with leading groups such as General Growth Properties, Tanger Outlets, CIM Group and Mall of America bringing these clients solutions such as way-finding displays, video walls, food court digital signage and overhead
+            music.
+          </p>
+          <h5>Solutions:</h5>
+          <ul>
+            <li id="output">Digital Directory</li>
+            <li id="output">Interactive Way-finding</li>
+            <li id="output">Video Walls</li>
+          </ul>
+        </div>
+        <div class="corporate">
+          <p id="output">Perhaps the most significant advantage you get from corporate digital signage and communications tools from Zero-In comes by way of the fact that every last one of our solutions is powered by the cloud. Any changes that you need to make, regardless
+            of how large or small, can be effortlessly executed in a matter of seconds. The Zero-In design team works corporate communicaiton teams to create templates, metric dashboard backgrounds and other content that is critical for communicating
+            corporate information to employees throughout the building, or other offices globally.</p>
+          <h5>Solutions:</h5>
+          <ul>
+            <li id="output">Lobby Displays</li>
+            <li id="output">Ad Free TV</li>
+            <li id="output">Video Walls</li>
+          </ul>
+        </div>
+      </section>
+      <div class="contact">
+        <p>
+          Connect with us today <br />
+          <a href="mailto:atopping@zero-in.com">contact@zero-in.com </a><br /> 888-260-7291 <br/>
+        </p>
+        <div class="address">
+          <section class="newyork">
+            <span>New York Office</span><br/> 1123 Broadway #704<br/> New York, NY<br/> 10010
+            <br/>
+          </section>
+          <section class="sparta">
+            <span> Sparta, NJ Office</span><br/> 5 Park Lake Road Ste 3<br/> Sparta, NJ<br/> 07871
+            <br/>
+          </section>
+        </div>
+      </div>
+      <section class="footer">
+        <div class="links">
+          <a href="https://www.instagram.com/zero_in_digital/"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/zero_in_digital"><i class="fab fa-twitter-square"></i></a>
+        </div>
+        <p class="disclaimer">© 2019 ZERO-IN. ALL RIGHTS RESERVED. POLICY TERMS OF SERVICE</p>
+      </section>
+    </div>
+
+    </div>
+  </main>
+  <div class="mobile-nav">
+    <ul>
+      <li>
+        <a href="http://" target="_blank" rel="noopener noreferrer">Products</a
+          >
+        </li>
+        <li>
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            >Solutions</a
+          >
+        </li>
+        <li>
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            >About Us</a
+          >
+        </li>
+        <li>
+          <a href="http://" target="_blank" rel="noopener noreferrer">Blog</a>
+      </li>
+      <li>
+        <a href="http://" target="_blank" rel="noopener noreferrer">Contact</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
